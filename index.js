@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const dotenv = require("dotenv"); // Importing dotenv for environment variables
+
+dotenv.config(); // Loading environment variables from .env file
 
 // database connection
 const { dbconnect } = require("./utils/dbconnect");
@@ -9,7 +12,7 @@ dbconnect();
 
 const studentroute = require("./routes/studentroute");
 
-const PORT = "4000";
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());

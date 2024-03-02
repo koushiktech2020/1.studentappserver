@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv"); // Importing dotenv for environment variables
+const mongoUrl = process.env.MONGO_URL;
 
-const mongouri = "mongodb://localhost:27017/StudenDB";
+dotenv.config(); // Loading environment variables from .env file
 
 //Testing Database connection for local Database
 exports.dbconnect = async () => {
   try {
-    await mongoose.connect(mongouri, {
+    await mongoose.connect(mongoUrl, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
