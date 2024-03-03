@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
-const dotenv = require("dotenv"); // Importing dotenv for environment variables
-const mongoUrl = process.env.MONGO_URL;
+const dotenv = require("dotenv");
 
-dotenv.config(); // Loading environment variables from .env file
+// env file configure
+dotenv.config();
 
-//Testing Database connection for local Database
 exports.dbconnect = async () => {
   try {
-    await mongoose.connect(mongoUrl, {
+    await mongoose.connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
