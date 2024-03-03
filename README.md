@@ -1,6 +1,6 @@
 Please give me stars if you like my projects.
 
-# student Management API
+# Student Management API
 
 This API provides endpoints for managing students, including operations such as adding new students, retrieving student details, updating student information, and deleting students.
 
