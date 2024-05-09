@@ -31,8 +31,8 @@ Authentication is not required to access these endpoints. However, you may imple
 
 ## env configuration
 
-1.MONGO_URL = "your mongo db uri"
-2.PORT = "your port no"
+- MONGO_URL = "your mongo db uri"
+- PORT = "your port no"
 
 ## Usage
 
