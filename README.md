@@ -29,6 +29,10 @@ Authentication is not required to access these endpoints. However, you may imple
 4. Ensure that you have MongoDB installed and running locally or provide a connection URI in the `.env` file.
 5. Start the server using `npm start`.
 
+## env configuration
+MONGO_URL = "your mongo db uri"
+PORT = "your port no"
+
 ## Usage
 
 - Make requests to the provided endpoints using tools like Postman or curl.
